@@ -8,7 +8,7 @@
 infopage="/etc/nodogsplash/htdocs/pages/mooncalc.html"
 
 # prophlactically make the directory
-mkdir $(dirname $infopage)
+mkdir -p $(dirname $infopage)
 
 now=$(date "+%Y-%m-%d %H:%M:%S")
 

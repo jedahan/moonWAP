@@ -26,7 +26,7 @@ seclunarMonthLen=2551442
 
 echo "Current lunar cycle lenth is $seclunarMonthLen seconds (~$(( seclunarMonthLen / ( 24 * 60 * 60 ) )) days)"
 
-# convert new moon time to seconds 
+# convert new moon time to seconds
 secnewmoon=$(date -d "$newmoon" +%s)
 
 # convert the requested time to seconds
