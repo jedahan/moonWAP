@@ -58,25 +58,25 @@ if [ $moonDay -le 1 ]   || [ $moonDay -ge  29 ]; then
     power="15"
 elif [ $moonDay -le 5 ]; then
     ssid="\xf0\x9f\x8c\x92"
-    image="moon-0035.jpg"    
+    image="moon-0035.jpg"
     name="WAXING CRESCENT"
     qos="75% AND WANING"
     power="13"
 elif [ $moonDay -le 9 ]; then
     ssid="\xf0\x9f\x8c\x93"
-    image="moon-0044.jpg"    
+    image="moon-0044.jpg"
     name="FIRST QUARTER"
     qos="50% AND WANING"
     power="8"
 elif [ $moonDay -le 13 ]; then
     ssid="\xf0\x9f\x8c\x94"
-    image="moon-0060.jpg"    
+    image="moon-0060.jpg"
     name="WAXING GIBBOUS"
     qos="25% AND WANING"
     power="3"
 elif [ $moonDay -le 16 ]; then
     ssid="\xf0\x9f\x8c\x95"
-    image="moon-0076.jpg"    
+    image="moon-0076.jpg"
     name="FULL MOON"
     qos="0%"
     power="0"
@@ -88,7 +88,7 @@ elif [ $moonDay -le 20 ]; then
     power="3"
 elif [ $moonDay -le 24 ]; then
     ssid="\xf0\x9f\x8c\x97"
-    image="moon-0135.jpg"    
+    image="moon-0135.jpg"
     name="LAST QUARTER"
     qos="50% AND WAXING"
     power="8"
@@ -100,8 +100,8 @@ else
     power="12"
 fi
 
-echo -e "SSID = $ssid"    
-echo "Name = $name" 
+echo -e "SSID = $ssid"
+echo "Name = $name"
 echo "Image = $image"
 echo "QOS = $qos"
 echo "Power= $power of 15"
@@ -110,7 +110,7 @@ echo "Power= $power of 15"
 
 iwconfig wlan0 txpower "$((power))dBm"
 
-## Update the SSID. 
+## Update the SSID.
 
 # Convert new ssid to unicode
 newssid="$(echo -e $ssid)"
