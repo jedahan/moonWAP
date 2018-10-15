@@ -9,7 +9,13 @@ when=`date -d "$1" "+%Y-%m-%d %H:%M:%S"`
 echo "Calcuilating moon phase for $when"
 
 # Start with the time of a recent known new moon (got from http://astro.ukho.gov.uk/moonwatch/ )
-newmoon="2016-03-09 01:24"
+#newmoon="2016-03-09 01:24"
+
+# Dundee Scotland 56.4620 N, 2.9707 W
+newmoon="2018-10-09 02:47"
+
+# Zagreb 45.8150 N, 15.9819 E
+#newmoon="2018-10-09 01:47"
 
 newmoonstr=$( date -d "$newmoon" "+%Y-%m-%d %H:%M:%S" )
 
